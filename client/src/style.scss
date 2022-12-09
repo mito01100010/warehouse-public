@@ -1,0 +1,228 @@
+$lightGrean : #b9e6e6;
+
+html {
+    font-size: 62.5%;
+}
+
+.shell {
+    max-width: calc(113.4rem + 1.5rem * 2);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        color: teal
+    }
+}
+
+.app {
+    font-size: 1.6rem;
+
+}
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $lightGrean;
+
+    h1 {
+        font-size: 2rem;
+        color: teal;
+        margin-bottom: 2rem;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    background-color: #fff;
+    width: 20rem;
+    gap: 2rem;
+
+    input {
+        padding: 1rem;
+        border: none;
+        border-bottom: 1px solid gray
+    }
+
+    button {
+        text-decoration: none;
+        padding: 1rem;
+        border: .1rem solid white;
+        background-color: teal;
+        cursor: pointer;
+        color: #fff;
+        transition: background-color .4s, color .8s, border .4s;
+
+        &:hover {
+            background-color: #fff;
+            border: .1rem solid teal;
+            color: teal;
+        }
+    }
+
+    p {
+        font-size: 12px;
+        color: red;
+        text-align: center;
+    }
+
+    span {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+.logout {
+    cursor: pointer;
+    transition: color .3s;
+
+    &:hover {
+        color: teal;
+    }
+}
+
+.header {
+    .header__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.nav {
+    padding: 1rem 0;
+    display: flex;
+    gap: 4rem;
+}
+
+.logo {
+    img {
+        width: 12rem;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $lightGrean;
+
+    img {
+        width: 12rem;
+    }
+}
+
+.form--find {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+
+    button {
+        min-width: 12rem;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 106rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+
+    thead tr {
+        background-color: teal;
+        color: #fff;
+        text-align: left;
+    }
+
+    th,
+    td {
+        padding: 12px 15px;
+    }
+
+    tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+    tbody tr:last-of-type {
+        border-bottom: 2px solid teal;
+    }
+
+    tbody tr.active-row {
+        font-weight: bold;
+        color: teal;
+    }
+}
+
+.form--add {
+    padding: 8rem 0;
+    min-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 3.5rem;
+
+    textarea {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    label {
+        border-bottom: 1px solid #767676;
+        transition: color .4s;
+        padding: 0 1rem;
+        font-size: 1.6rem;
+
+        &:hover {
+            color: teal;
+        }
+    }
+}
+
+.table-actions {
+    padding: .5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    button, .btn-link{
+        text-decoration: none;
+        padding: .3rem;
+        border: .1rem solid white;
+        background-color: teal;
+        cursor: pointer;
+        color: #fff;
+        transition: background-color .4s, color .8s, border .4s;
+
+        &:hover {
+            background-color: #fff;
+            border: .1rem solid teal;
+            color: teal;
+        }
+    }
+}
+
+.data-table {
+    margin-bottom: 10rem;
+}
